@@ -1,0 +1,151 @@
+/* SET FONTS */
+@font-face {
+  font-family: 'GothamLight';
+  src: url('../fonts/Gotham Light Regular.otf');
+}
+body {
+	font-family: 'GothamLight' !important;
+}
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+/* END FONTS */
+.calendario {
+	width: 100%;
+	height: : 100%;
+}
+.row {
+	margin: 0;
+	padding: 2% 0;
+}
+
+.calendario, .calendario td, .calendario tr, .calendario caption  {
+	border: 1px solid;
+}
+
+.calendario td {
+
+	height: 30px;
+	
+							 
+	text-align: center;
+
+}
+
+.calendario .mes {		
+
+		font-weight: bold;
+		text-align: center;		
+		width: 100%;
+
+}
+
+.calendario .semana {
+	background-color: #dbdbdb;
+	font-weight: bold;	
+
+}
+
+.calendario .dia {
+		
+
+		height: 100%;
+
+		padding-top:6px;
+
+		vertical-align:middle;
+
+		position:relative;
+
+}
+
+.calendario .evento {
+
+		position: relative;
+
+		font: 9px verdana;
+
+		color: #C30;
+
+		position:absolute;
+
+		right: -2px;
+
+		top: -2px;					  
+}
+
+.calendario tfoot tr td {
+	height: 42px;
+}
+
+.calendario .change-event {
+	cursor: pointer;
+}
+.subttl {
+	cursor: pointer;
+}
+.list-inline li {
+	    vertical-align: sub;
+}
+.subttl-selected{
+	border: 1px solid;
+}
+.color-subtitle {
+	width: 30px;
+	height: 15px;
+	float: left;
+	display: block;
+	border: 1px solid;
+}
+.calendario .fds-feriado-not-change {
+	background-color: #ffadad;
+}
+.calendario .fds-feriado, .color-subtitle.red {
+	background-color: #ffadad;
+}
+
+.calendario .dia-escolar, .color-subtitle.green {
+	background-color: #b9f7ca;
+}
+
+.calendario .sabado-letivo, .color-subtitle.yellow {
+	background-color: #f7f5b9;
+}
+
+.calendario .ini-fim-semestre, .color-subtitle.blue {
+	background-color: #b9ecf7;
+}
+
+.calendario .faltas-justificada, .color-subtitle.orange {
+	background-color: orange;
+	color: white;
+}
+.calendario .falta-nao-justificada, .color-subtitle.red-student {
+	background-color: red;
+	color: white;
+}
+.calendario .atestado-medico, .color-subtitle.blue-student {
+	background-color: blue;
+	color: white;
+}
+.calendario .paralisacao, .color-subtitle.brown {
+	background-color: brown;
+	color: white;
+}
+.calendario .greve, .color-subtitle.green-student {
+	background-color: green;
+	color: white;
+}
+.calendario .intemperie, .color-subtitle.yellow-student {
+	background-color: yellow;
+	color: black;
+}
+
+.alert {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
